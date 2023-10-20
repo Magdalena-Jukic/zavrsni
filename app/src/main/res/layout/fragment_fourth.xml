@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_spinner_vanjski_promjer_upis_hamburski_luk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/dhamburskiluk"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VANJSKI PROMJER [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+
+                <EditText
+                    android:id="@+id/et_vanjski_promjer_upis_hamburski_luk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Vanjski promjer"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="40dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_promjer_upis_hamburski_luk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_spinner_vanjski_promjer_upis_hamburski_luk"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/fhamburskiluk"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POLUMJER SAVIJANJA [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+                <EditText
+                    android:id="@+id/et_polumjer_savijanja_upis_hamburski_luk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Polumjer savijanja"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="40dp"
+
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_debljina_stjenke_upis_hamburski_luk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_promjer_upis_hamburski_luk"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/thamburskiluk"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEBLJINA STJENKE [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+                <EditText
+                    android:id="@+id/et_debljina_stjenke_upis_hamburski_luk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Debljinu stjenke"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="40dp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_kut_savijanja_upis_hamburski_luk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_debljina_stjenke_upis_hamburski_luk"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/kuthamburskiluk"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KUT SAVIJANJA [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+
+                <EditText
+                    android:id="@+id/et_kut_savijanja_upis_hamburski_luk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Kut savijanja"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="40dp"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_masa_upis_hamburski_luk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_kut_savijanja_upis_hamburski_luk"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_izracun_mase_upis_hamburski_luk"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="MASA"
+                />
+            <TextView
+                android:id="@+id/tv_masa_upis_hamburski_luk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:hint="Masa cijevi"
+                android:gravity="center"
+
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_cijena_upis_hamburski_luk"
+            android:layout_below="@+id/ll_masa"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Unesite cijenu [kn/kg]"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cijena_upis_hamburski_luk"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/btn_izracun_cijene_upis_hamburski_luk"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:fontFamily="serif"
+                android:text="CIJENA"
+                />
+            <TextView
+                android:id="@+id/tv_cijena_upis_hamburski_luk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:hint="Cijena cijevi"
+
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

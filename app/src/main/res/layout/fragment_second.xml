@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_vanjski_promjer_cijev"
+            android:layout_below="@+id/tv_opis_cijev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/dcijev"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VANJSKI PROMJER [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+
+                <EditText
+                    android:id="@+id/et_vanjski_promjer_upis_cijev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Vanjski promjer"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="40dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_debljina_stjenki_cijev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_vanjski_promjer_cijev"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/tcijev"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEBLJINA STJENKE [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+                <EditText
+                    android:id="@+id/et_debljina_stjenke_upis_cijev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Debljina stjenke"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="40dp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_duljina_cijev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_debljina_stjenki_cijev"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/lcijev"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DULJINA [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+                <EditText
+                    android:id="@+id/et_duljina_upis_cijev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Duljina"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="40dp"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_masa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_duljina_cijev"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_izracun_mase_upis_cijev"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_spinner"
+                android:text="MASA"
+                android:fontFamily="serif"
+                />
+            <TextView
+                android:id="@+id/tv_masa_upis_cijev"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:hint="Masa cijevi"
+
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_cijena_upis_cijev"
+            android:layout_below="@+id/ll_masa"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Unesite cijenu [kn/kg]"
+
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="serif"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cijena_upis_cijev"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/btn_izracun_cijene_upis_cijev"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="CIJENA"
+
+                android:fontFamily="serif"
+                />
+            <TextView
+                android:id="@+id/tv_cijena_upis_cijev"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:hint="Cijena cijevi"
+
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

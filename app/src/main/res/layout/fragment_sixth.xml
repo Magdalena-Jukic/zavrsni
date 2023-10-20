@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_vanjski_promjer_sireg_dijela_upis_reducir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_opis_upis_reducir"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/dreducir"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VANJSKI PROMJER [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+                <EditText
+                    android:id="@+id/et_vanjski_promjer_sireg_dijela_upis_reducir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Vanjski promjer"
+
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vanjski_promjer_uzeg_dijela_upis_reducir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_vanjski_promjer_sireg_dijela_upis_reducir"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/d1reducir"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VANJSKI PROMJER [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+                <EditText
+                    android:id="@+id/et_vanjski_promjer_uzeg_dijela_upis_reducir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Vanjski promjer"
+
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_simetrala_upis_reducir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_vanjski_promjer_uzeg_dijela_upis_reducir"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/lreducir"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DULJINA [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+
+                <EditText
+                    android:id="@+id/et_duljina_upis_reducir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="DULJINA"
+
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_debljina_stjenkie_sireg_dijela_upis_reducir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_simetrala_reducir"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/treducir"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="DEBLJINA STJENKE [mm]"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+
+                <EditText
+                    android:id="@+id/et_debljina_stjenke_sireg_dijela_upis_reducir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Debljina stjenke"
+
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_debljina_stjenke_uzeg_dijela_upis_reducir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_debljina_stjenkie_sireg_dijela_upis_reducir"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/t1reducir"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEBLJINA STJENKE [mm]"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"/>
+
+                <EditText
+                    android:id="@+id/et_debljina_stjenke_uzeg_dijela_upis_reducir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Debljina stjenke"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_masa_upis_reducir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_debljina_stjenke_uzeg_dijela_upis_reducir"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_izracun_mase_upis_reducir"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_spinner"
+                android:text="MASA"
+
+                android:fontFamily="serif"
+                />
+            <TextView
+                android:id="@+id/tv_masa_upis_reducir"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:hint="Masa reducira"
+                android:gravity="center"
+
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_cijena_upis_reducir"
+            android:layout_below="@+id/ll_masa_reducir"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Unesite cijenu [kn/kg]"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cijena_upis_reducir"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/btn_izracun_cijene_upis_reducir"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="CIJENA"
+                android:fontFamily="serif"
+                />
+
+            <TextView
+                android:id="@+id/tv_cijena_upis_reducir"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:hint="Cijena reducira"
+
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
